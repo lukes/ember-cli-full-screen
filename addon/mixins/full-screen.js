@@ -60,7 +60,21 @@ export default Em.Mixin.create(Em.Evented, {
       } else {
         this.send('enterFullscreen');
       }
-    }
+    },
+
+    // Alias actions:
+
+    enterFullScreen: function() {
+      send('enterFullscreen');
+    },
+
+    exitFullScreen: function() {
+      send('exitFullscreen');
+    },
+
+    toggleFullScreen: function() {
+      send('toggleFullscreen');
+    },
 
   }
 

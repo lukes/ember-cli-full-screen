@@ -1,7 +1,7 @@
 {
-  "name": "ember-full-screen",
+  "name": "ember-cli-full-screen",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An Ember CLI Addon that provides a pure-Ember mixin that allows your application to easily control fullscreening of components.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Luke Duncalfe",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -38,7 +38,9 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "fullscreen",
+    "full-screen"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5"

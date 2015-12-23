@@ -1,4 +1,4 @@
-import Em from 'ember'
+import Em from 'ember';
 
 export default Em.Mixin.create(Em.Evented, {
 
@@ -64,4 +64,4 @@ export default Em.Mixin.create(Em.Evented, {
 
   }
 
-})
+});

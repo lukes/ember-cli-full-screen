@@ -4,6 +4,8 @@ An [Ember CLI Addon](http://www.ember-cli.com/) that provides a
 pure-Ember mixin that allows your application to easily control
 fullscreening of components.
 
+You can view a simple [demo here](http://lukes.github.io/ember-cli-full-screen/).
+
 ## Installation
 
 Run the install command on your ember-cli project:

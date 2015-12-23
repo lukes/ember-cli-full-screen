@@ -28,9 +28,9 @@ export default Ember.Component.extend(FullScreenMixin, {
 
 Your components will then have the following actions:
 
-* `toggleFullScreen`
-* `enterFullScreen`
-* `exitFullScreen`
+* `toggleFullscreen`
+* `enterFullscreen`
+* `exitFullscreen`
 
 And the boolean property `fullscreen` to check if the component is
 fullscreened.
@@ -61,9 +61,9 @@ You can of course use `send()` from within the component itself:
 ```javascript
 export default Ember.Component.extend({
   actions: {
-    conditionallyToggleFullScreen() {
+    conditionallyToggleFullscreen() {
       if (this.get('someCheck')) {
-        this.send('toggleFullScreen');
+        this.send('toggleFullscreen');
       }
     }
   }

@@ -1,4 +1,4 @@
-# Ember-full-screen
+# ember-cli-full-screen
 
 An [Ember CLI Addon](http://www.ember-cli.com/) that provides a
 pure-Ember mixin that allows your application to easily control
@@ -6,7 +6,7 @@ fullscreening of components.
 
 ## Installation
 
-ember-cli-full-screen is an ember-cli addon. Just run the install command on your ember-cli project:
+Run the install command on your ember-cli project:
 
 `ember install ember-cli-full-screen`
 
@@ -15,8 +15,7 @@ ember-cli-full-screen is an ember-cli addon. Just run the install command on you
 Add the mixin to your components:
 
 ```javascript
-// app/components/example.js
-
+// app/components/my-component.js
 import Ember from 'ember';
 import FullScreenMixin from 'ember-cli-full-screen/mixins/full-screen';
 
@@ -31,8 +30,8 @@ Your components will then have the following actions:
 * `enterFullScreen`
 * `exitFullScreen`
 
-And the boolean property: `fullscreen` to check if the component is in
-fullscreen.
+And the boolean property `fullscreen` to check if the component is
+fullscreened.
 
 Fullscreen can additionally be exited by hitting `Esc`.
 

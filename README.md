@@ -1,26 +1,70 @@
 # Ember-full-screen
 
-This README outlines the details of collaborating on this Ember addon.
+An [Ember CLI Addon](http://www.ember-cli.com/) that provides a
+pure-Ember mixin that allows your application to easily control
+fullscreening of components.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+ember-cli-full-screen is an ember-cli addon. Just run the install command on your ember-cli project:
 
-## Running
+`ember install ember-cli-full-screen`
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Usage
 
-## Running Tests
+Add the mixin to your components:
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+```javascript
+// app/components/example.js
 
-## Building
+import Ember from 'ember';
+import FullScreenMixin from 'ember-cli-full-screen/mixins/full-screen';
 
-* `ember build`
+export default Ember.Component.extend(FullScreenMixin, {
+    // Your component code...
+});
+```
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+Your components will then have the following actions:
+
+* `toggleFullScreen`
+* `enterFullScreen`
+* `exitFullScreen`
+
+And the boolean property: `fullscreen` to check if the component is in
+fullscreen.
+
+Fullscreen can additionally be exited by hitting `Esc`.
+
+## Examples
+
+Toggling fullscreen from the component's template:
+
+```handlebars
+<span {{action 'toggleFullscreen'}}>Toggle fullscreen</span>
+```
+
+Using the `fullscreen` property to check for fullscreen state:
+
+```handlebars
+{{#if fullscreen}}
+  We're in fullscreen!
+  <span {{action 'exitFullscreen'}}>Exit fullscreen</span>
+{{else}}
+  <span {{action 'enterFullscreen'}}>Fullscreen</span>
+{{/if}}
+```
+
+You can of course use `send()` from within the component itself:
+
+```javascript
+export default Ember.Component.extend({
+  actions: {
+    conditionallyToggleFullScreen() {
+      if (this.get('someCheck')) {
+        this.send('toggleFullScreen');
+      }
+    }
+  }
+});
+```

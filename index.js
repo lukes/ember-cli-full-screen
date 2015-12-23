@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-full-screen'
+  name: 'ember-cli-full-screen'
 };

@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'dummy',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/ember-cli-full-screen/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {

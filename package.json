@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-full-screen",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "An Ember CLI Addon that provides a pure-Ember mixin that allows your application to easily control fullscreening of components.",
   "directories": {
     "test": "tests"
